@@ -1,0 +1,253 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter',sans-serif;
+}
+
+body{
+    margin: 5%;
+}
+
+.img_web3{
+    width: 100%;
+}
+
+h1{
+    font-family: 'Inter',sans-serif;
+    font-weight: 800;
+    font-size: 42px;
+}
+
+p{
+    line-height: 1.5rem;
+    margin: 2% 0;
+    font-weight: 400;
+    color:hsl(236, 13%, 42%);
+}
+button{
+    border: transparent;
+    background-color:hsl(5, 85%, 63%);
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    padding: 3% 8%;
+    color: white;
+    margin:5% 0;
+    font-weight: 400;
+    border-color: transparent;
+}
+
+.blue{
+    margin: 5% 0;
+    background-color:hsl(240, 100%, 5%) ;
+    color: hsl(36, 100%, 99%);
+    padding: 5%;
+}
+
+h2{
+    color:hsl(35, 77%, 62%);
+
+}
+
+.blue-wrap-1{
+    margin: 5% 0;
+}
+
+article > h3{
+    font-weight: 800;
+}
+
+article{
+    padding: 5% 0;
+    margin: 5% 0;
+    border-bottom: 1px solid hsl(236, 13%, 42%);
+}
+
+.art_1{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 20px;
+    border-bottom: unset;
+}
+
+.img1{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.head_number{
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 5%;
+    color: hsla(236, 13%, 42%, 0.486);
+}
+
+
+/*for naviagation bar*/
+
+.header{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2% 0;
+}
+.menu{
+    align-self: center;
+
+}
+
+.appear{
+   position: absolute;
+   left:38%;
+   right: 0;
+
+    background-color: white;
+    width: 60%;
+    height: 100%;
+    animation: sd ;
+
+}
+
+.disappear{
+ 
+    display: none;
+}
+
+.appear li {
+    list-style: none;
+    margin: 5% 2%;
+    padding: 5%;
+    border-radius: 12px;
+
+}
+.appear li:hover{
+    background-color: hsl(35, 77%, 62%);
+}
+
+#close{
+    position: relative;
+    left: 85%;
+}
+
+.dis{
+    display: none;
+}
+@media screen and (min-width:604px) {
+
+    body{
+        margin-inline:10% ;
+    }
+    .sec-1{
+        display: flex;
+        flex-direction: row;
+       align-items: flex-start;
+       justify-items: flex-start;
+       gap: 20px;
+    }
+    .img_web3{
+        display: none;
+    }
+    .dis{
+        display: block;
+    }
+    .web_1{
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        margin: 1.9%;
+    }
+    h1{
+        font-size: 3rem;
+    }
+
+    button{
+        font-size: 1rem;
+        margin: unset;
+        width: 50%;
+    }
+    button:hover{
+        background-color: hsl(240, 100%, 5%);
+        color: white;
+    }
+
+    .web_2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .blue{
+        margin: unset;
+        padding: 2%;
+    }
+
+    article h3:hover{
+        color: hsl(35, 77%, 62%);
+    }
+
+    .sec-3{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .art_1{
+    display: grid;
+    grid-template-columns: 40% 50%;
+    margin: unset;
+    grid-template-rows:80%;
+    gap: 20px;
+    }
+    
+    article .art_1{
+        margin: unset;
+    }
+
+    h4:hover{
+        color: hsl(5, 85%, 63%);
+    }
+
+
+    /*for the navigation bar*/
+
+    .menu{
+        display: none;
+    }
+    .disappear{
+        display: block;
+
+    }
+    #close{
+        display: none;
+    }
+    .appear{
+        background-color: unset;
+        display: flex;
+        height: unset;
+        position:static;
+        justify-content: center;
+       
+    
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content:flex-start ;
+    }
+    .appear li:hover{
+        color: hsl(35, 77%, 62%);
+        background-color: unset;
+    }
+    .header{
+      justify-content: space-between;
+      align-items:center; 
+    }
+
+    button ,.appear li ,article h3,h4{
+        cursor: pointer;
+    }
+}
